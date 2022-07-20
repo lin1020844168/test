@@ -15,6 +15,7 @@
         <module name="eureka-provider-8002" />
         <module name="consul-provider-8001" />
         <module name="eureka-provider-8001" />
+        <module name="spring-cloud-gateway" />
         <module name="eureka-consumer-8081" />
       </profile>
     </annotationProcessing>
