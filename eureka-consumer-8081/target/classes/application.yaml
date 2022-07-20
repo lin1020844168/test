@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7072/eureka, http://localhost:7071/eureka
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+feign:
+  client:
+    config:
+      default:
+        readTimeout: 3000
+  circuitbreaker:
+    enabled: true
+
+
+spring:
+  application:
+    name: "consumer"
+

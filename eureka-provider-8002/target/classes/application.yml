@@ -1,0 +1,16 @@
+server:
+  port: 8002
+
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7072/eureka, http://localhost:7071/eureka
+    register-with-eureka: true
+  instance:
+    hostname: provider.com
+
+spring:
+  application:
+    name: "provider"

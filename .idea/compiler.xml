@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service-01" />
+        <module name="hystrix-dashborad-9001" />
+        <module name="spring-could-api" />
+        <module name="zookeeper-provider-8001" />
+        <module name="eureka-service-02" />
+        <module name="eureka-provider-8002" />
+        <module name="consul-provider-8001" />
+        <module name="eureka-provider-8001" />
+        <module name="eureka-consumer-8081" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ereka-service-02" target="8" />
+      <module name="payment" target="1.8" />
+      <module name="spring-could-consumer" target="8" />
+      <module name="spring-could-provider-8001" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="payment" options="-parameters" />
+    </option>
+  </component>
+</project>

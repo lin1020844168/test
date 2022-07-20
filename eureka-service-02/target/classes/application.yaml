@@ -1,0 +1,15 @@
+server:
+  port: 7072
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://service01:7071/eureka
+  instance:
+    hostname: service02
+
+spring:
+  application:
+    name: "service_7072"
