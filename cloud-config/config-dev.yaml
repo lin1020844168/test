@@ -1,2 +1,2 @@
-confing-dev:
-  version: 1
+version: 1
+env: dev
