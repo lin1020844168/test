@@ -1,2 +1,2 @@
-config-pro:
-  version: 1
+version: 1
+env: pro
