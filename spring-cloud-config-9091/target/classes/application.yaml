@@ -15,8 +15,10 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:lin1020844168/test.git
+          uri: https://github.com/lin1020844168/test.git
           search-paths: /cloud-config
+          username: lin1020844168
+          password: a1020844168
       label: master
 
 
