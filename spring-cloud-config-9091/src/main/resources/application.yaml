@@ -1,0 +1,24 @@
+server:
+  port: 9091
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7072/eureka, http://localhost:7071/eureka
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:lin1020844168/test.git
+          search-paths: /cloud-config
+          default-label: master
+
+
+  application:
+    name: config

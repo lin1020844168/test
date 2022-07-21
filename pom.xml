@@ -18,7 +18,9 @@
         <module>zookeeper-provider-8001</module>
         <module>consul-provider-8001</module>
         <module>hystrix-dashborad-9001</module>
-        <module>spring-cloud-gateway</module>
+        <module>spring-cloud-gateway-9002</module>
+        <module>spring-cloud-config-9091</module>
+        <module>spring-cloud-config-client-9092</module>
     </modules>
     <dependencyManagement>
         <dependencies>

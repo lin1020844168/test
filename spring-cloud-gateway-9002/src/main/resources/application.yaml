@@ -1,0 +1,23 @@
+server:
+  port: 9002
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7072/eureka, http://localhost:7071/eureka
+    register-with-eureka: true
+  instance:
+    hostname: gateway.com
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: consumer
+          uri: http://CONSUMER
+          predicates:
+            - Path=/test/get
+  application:
+    name: "gateway"
+

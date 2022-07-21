@@ -30,7 +30,7 @@ public class TestController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @GetMapping("/doGet")
+    @GetMapping("/test/get")
     @ResponseBody
     public List<People> doGet() {
 //        String url = "http://PROVIDER";

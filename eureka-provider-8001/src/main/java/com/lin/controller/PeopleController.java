@@ -17,7 +17,6 @@ public class PeopleController {
     @RequestMapping("/test")
     @ResponseBody
     public List<People> test() throws InterruptedException {
-        Thread.sleep(3000);
         return peopleService.getAllPeoples();
     }
 }
