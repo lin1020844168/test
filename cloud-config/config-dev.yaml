@@ -1,2 +1,6 @@
 version: 10
 env: dev
+spring:
+  cloud:
+    config:
+      profile: dev
