@@ -2,4 +2,4 @@ version: 10
 spring:
   cloud:
     config:
-      profile: dev
+      profile: pro
